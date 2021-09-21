@@ -1,0 +1,39 @@
+:root{
+    --border-radius-big: 44px;
+    --border-radius-small: 22px;
+
+    --margin-small: 12px;
+    --margin-big: 24px;
+    --padding-small: 12px;
+    --padding-big: 24px;
+
+    --card-background: rgba(23, 34, 87, 0.85);
+    --card-contrast-colour: rgba(255, 255, 255, 0.85);
+    --card-contrast-colour-dark: rgba(255,255,255,0.75);
+
+    --card-box-shadow-regular: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    --card-box-shadow-big: 0px 10px 15px 5px rgba(0,0,0,0.1);
+
+    --card-animation-duration: 0.3s;
+}
+
+.card{
+    box-shadow: var(--card-box-shadow-regular);
+    border-radius: var(--border-radius-small);
+    background-color: var(--card-background);
+    padding: var(--padding-big);
+    color: var(--card-contrast-colour);
+    moz-transition: all var(--card-animation-duration) ease-in-out;
+    -o-transition: all var(--card-animation-duration) ease-in-out;
+    -webkit-transition: all var(--card-animation-duration) ease-in-out;
+    transition: all var(--card-animation-duration) ease-in-out;
+}
+.card:hover{
+    box-shadow: var(--card-box-shadow-big);
+    transform: translate3d(0px, -3px, 0px);
+}
+
+.card-image{
+    width: 100%;
+    border-radius: var(--border-radius-small);
+}
